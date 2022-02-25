@@ -8,7 +8,7 @@ import crud
 
 @strawberry.type
 class Character:
-    id: Optional[strawberry.ID]
+    id: strawberry.ID
     created: Optional[datetime.datetime]
     gender: Optional[str]
     image: Optional[str]
@@ -47,7 +47,7 @@ class Characters:
 
 @strawberry.type
 class Episode:
-    id: Optional[strawberry.ID]
+    id: strawberry.ID
     air_date: Optional[datetime.datetime]
     created: Optional[datetime.datetime]
     episode: Optional[str]
@@ -78,7 +78,7 @@ class FilterCharacter:
 
 @strawberry.type
 class Location:
-    id: Optional[strawberry.ID]
+    id: strawberry.ID
     created: Optional[datetime.datetime]
     dimension: Optional[str]
     name: Optional[str]
