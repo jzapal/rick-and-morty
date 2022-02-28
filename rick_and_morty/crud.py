@@ -15,7 +15,7 @@ def get_location_by_id(pk: str) -> Union[dict, None]:
     return db.locations_by_id.get(pk)
 
 
-def get_characters(offset, limit, **filters) -> (dict, int):
+def get_characters(offset: int, limit: int, **filters) -> (dict, int):
     characters = list(db.characters_by_id.values())
     for field, mask in filters.items():
         if mask:

@@ -8,5 +8,5 @@ to start it.
 GraphQL API will be available at `http://127.0.0.1:8000/graphql`
 
 ## How to run tests
-To run tests install `pytest` and execute `pytest` command in the root directory. Please add `rick_and_morty` directory 
-to `PYTHONPATH`.
+To run tests install `pytest` package and then execute `pytest` command in the root directory. Please add 
+`rick_and_morty` directory to `PYTHONPATH`.
